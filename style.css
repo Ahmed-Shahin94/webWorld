@@ -1,0 +1,346 @@
+body{
+    font-family:'Arial',tahoma,sans-serif;
+    background-color:#f8f5f5;
+    font-size:1rem;
+    
+
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.container {
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    opacity:0.9;
+}
+ul{
+    list-style:none;
+}
+img{
+    width: 40%;
+}
+.button_1{
+    background:coral;
+    padding:.6rem 0.8rem;
+    color:#fff;
+    border:none;
+    font-size:1rem;
+    border-radius:5px;
+    
+}
+/* Header */
+.header{
+    background-color:#3d3d3d;
+    color:#fff;
+    min-height:90px;
+    padding:0.6rem 0;
+    border-bottom:4px solid coral;
+}
+.special{
+    color:coral;
+    margin-right:0.4rem;
+}
+.branding h2{
+    margin-top:10px;
+    font-size:1.8rem;
+    letter-spacing:0.08rem;
+    float:left;
+    word-spacing:.4rem;
+    width:60%;
+
+
+}
+nav{
+    padding:1.2rem 0;
+    float:left;
+    width:40%;
+}
+nav ul{
+    text-align:right;
+}
+nav ul li{
+    display:inline;
+    padding:0 0.6rem;
+}
+nav ul li a{
+    color:#fff;
+}
+.header .container nav ul li .special{
+    color:coral;
+}
+.bg-dark {
+    background-color:#333;
+    text-align:left;
+    color:rgb(233, 233, 233);
+    padding:0.8rem 0.6rem !important;
+}
+
+/* Showcase  */
+#showcase{
+    width:100%;
+    min-height:450px;
+    background:url('img/bg.jpg') no-repeat center/cover;
+    text-align:center;
+    padding:2rem 0;
+    position:relative;
+    overflow:hidden;
+}
+#showcase::after{
+    content:'';
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    background-color:rgba(0,0,0,0.5);
+    z-index:1;
+}
+#showcase .container h1{
+    color:#fff;
+    font-size:3rem;
+    padding:0.9rem 0;
+    z-index:2;
+    position:absolute;
+    top:25%;
+    left:45%;
+    transform:translate(-40%,-20%);
+
+}
+#showcase .container p{
+    color:#fff;
+    font-size:1.3rem;
+    line-height:1.3;
+    z-index:2;
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#newletter{
+    background:rgb(129, 124, 124);
+    min-height:90px;
+    padding:1.3rem 0;
+}
+#newletter .container h3{
+    color:#fff;
+    font-size:1.3rem;
+    float:left;
+    margin-top:0.6rem;
+}
+#newletter .container form{
+    float:right;
+    margin-top:0.5rem;
+}
+#newletter .container form input[type="email"]{
+    padding:.6rem 0.3rem;
+    border:none;
+    border-radius:4px;
+}
+/* Boxes part */
+.boxes{
+    background-color:#fff;
+    width:100%;
+    min-height:310px;
+    padding:2.4rem 0;
+    text-align:center;
+}
+.boxes .container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:2rem;
+}
+.boxes .container .box h3{
+    font-size:1.2rem;
+    padding:1.3rem 0;
+    font-weight:bold;
+}
+.boxes .container .box:nth-child(3) h3{
+    
+    padding:.7rem 0;
+    font-weight:bold;
+}
+
+.footer{
+    background-color:#333;
+    color:#999;
+    padding:3rem 0;
+    text-align:center;
+}
+
+/* about section */
+.main-section {
+    background:#fff;
+    color:#000;
+    padding:2rem 0;
+}
+.main-section .container {
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap:2rem;
+    justify-content:left;
+    align-items:left;
+    text-align:left;
+}
+.main-section h2{
+    color:#000;
+    padding:1rem 0;
+}
+.main-section p{
+    padding:1rem  0;
+    line-height:1.5;
+    font-size:1.1rem;
+}
+/* Services Section */
+#services .container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap:1rem;
+    justify-content:left;
+    align-items:left;
+    text-align:left;
+}
+#services .container .main-col{
+    padding:2rem 0;
+    width:100%;
+}
+#services .container .main-col .box1{
+    padding:0.8rem 0.4rem;
+    
+}
+#services .container .main-col .box1 h3{
+    font-size:1.3rem;
+    padding-bottom:0.6rem;
+    font-weight:700;
+}
+#services .container .main-col .box1 p{
+    font-size:1rem;
+    line-height:1.4;
+
+}
+#services .container .main-col .box1 .price{
+    
+   font-size:1.1rem;
+   color:rgb(41, 33, 33);
+   margin-top:0.4rem;
+   
+}
+#sidebar{
+    background:rgba(0,0,0,0.6);
+    min-height:300px;
+    width:100%;
+    margin:auto;
+   
+    padding:2rem 0.7rem;
+    text-align:center;
+    color:#fff;
+}
+#sidebar form label{
+    display:block;
+    text-align:left;
+    padding:0.4rem 0;
+}
+#sidebar form input{
+    width:100%;
+    padding:0.6rem 0.3rem;
+}
+#sidebar form textarea{
+    width:100%;
+    padding:0.6rem 0.3rem;
+    margin-bottom:0.5rem;
+}
+
+/* Media Query */
+@media(max-width:768px){
+    .branding h2{
+        margin-top:10px;
+        font-size:1.5rem;
+        letter-spacing:0.06rem;
+        float:none;
+        word-spacing:.3rem;
+        width:100%;
+    
+    }
+    nav{
+        padding:1rem 0;
+        float:none;
+        width:100%;
+    }
+    nav ul{
+        text-align:left;
+    }
+    nav ul li{
+        margin-right:0.6rem;
+        padding:0 0;
+    }
+    #showcase{
+        min-height:360px;
+        padding:1.4rem 0;
+        
+    }
+    #showcase .container h1{
+        font-size:2rem;
+        padding:0.3rem 0;
+        text-align:center;
+        top:20%;
+        left:25%;
+        transform:translate(-20%,-25%);
+    }
+    #showcase .container p{
+        font-size:1.2rem;
+        line-height:1.4;
+        top:60%;
+        left:25%;
+        transform:translate(-18%,-25%);
+    }   
+    #newletter .container h3{
+        text-align:center;
+        font-size:1.3rem;
+        float:none;
+        margin-top:0.6rem;
+    }
+    #newletter .container form{
+        float:none;
+        margin-top:0.7rem;
+        text-align:center;
+    }
+    .boxes{
+        background-color:#fff;
+        width:100%;
+        min-height:310px;
+        padding:2.4rem 0;
+        text-align:center;
+    }
+    .boxes .container,#services .container,.main-section .container{
+        
+        grid-template-columns:1fr;
+        grid-gap:2.6rem;
+    }
+    /* #services .container{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:1rem;
+        
+    }
+    .main-section .container {
+        display:grid;
+        grid-template-columns:1fr;
+       
+    } */
+    #sidebar{
+        
+        margin-bottom:2.4rem;
+       
+        
+    }
+    
+   
+}
